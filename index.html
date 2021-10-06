@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjusting Entries</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="heading">Adjusting Entries
+        </div>
+        <div class="inputs">
+            <input id="date" type="text" placeholder="Date">
+            <input id="accDetails" type="text" placeholder="Account Details">
+            <input id="amount" type="text" placeholder="Amount">
+            <input id="entryNature" type="text" placeholder="Entry Nature">
+            <!-- <select name="entry">
+                <option id="debit">Debit</option>
+                <option id="credit">Credit</option>
+            </select> -->
+            <button onclick="adjustments()">Add</button>
+        </div>
+        <div>
+            <table border="1px" width="100%" id="my-table">
+                    <thead>
+                        <th>Date</th>
+                        <th>Account Details</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                    </thead>
+            </table>
+        </div>
+        
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
