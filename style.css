@@ -1,26 +1,99 @@
-.contanier{
-    width: 75%;
+.container-fluid{
+    width: 70%;
+    height: fit-content;
     margin: 0 auto;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* border: 1px solid gray; */
+}
+.container{
+    display: flex;
+    background-color: #4db6ac;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    flex-wrap: wrap ;
+    border-radius: 5px;
+
+}  
+.display-1{
+    display: flex;
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #000000;
+} 
+.inputs{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
     
 }
-/* .heading{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-right: -50px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+input{
     width: 100%;
-    background-color: #4caf50;
-    color: #000000;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    font-weight: bolder;   
-} */
-
-.inputs{
-   display: flex;
-   justify-content: center;
+    display: flex;
+    margin: 10px 20px 20px 10px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
 }
+input::placeholder{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+button{
+    width: 100%;
+    display: flex;
+    margin: 10px 20px 20px 10px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+}
+
+table{
+    width: 100%;
+    justify-content: center;
+    border: none;
+}
+
+table > thead {
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: left;
+    border-radius: 5px;
+    color: #085850 ;
+    border: none;
+}
+th {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+tr{
+    height: 10px;
+}
+td{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+tr.even {
+    background-color: #efefef;
+}
+tr:hover {
+    background-color: #c3e6e5;
+}
+    
